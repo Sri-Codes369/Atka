@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Atka/static/css/main.bccf2a03.css",
-    "main.js": "/Atka/static/js/main.76b157b8.js",
+    "main.js": "/Atka/static/js/main.1b172b68.js",
     "static/js/453.45106b62.chunk.js": "/Atka/static/js/453.45106b62.chunk.js",
     "index.html": "/Atka/index.html",
     "main.bccf2a03.css.map": "/Atka/static/css/main.bccf2a03.css.map",
-    "main.76b157b8.js.map": "/Atka/static/js/main.76b157b8.js.map",
+    "main.1b172b68.js.map": "/Atka/static/js/main.1b172b68.js.map",
     "453.45106b62.chunk.js.map": "/Atka/static/js/453.45106b62.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bccf2a03.css",
-    "static/js/main.76b157b8.js"
+    "static/js/main.1b172b68.js"
   ]
 }

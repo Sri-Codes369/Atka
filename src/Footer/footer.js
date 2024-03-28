@@ -3,6 +3,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
+   const copyRightYear = new Date().getFullYear()
    return(
     <section className="footer-section">
          <div className="footer-brand-name">
@@ -13,7 +14,7 @@ function Footer() {
     <li><a ><FaFacebookF></FaFacebookF></a></li>
     <li><a ><FaXTwitter></FaXTwitter></a></li>
 </ul>
-            <p>&copy; 2024 Atka. All rights reserved.</p>
+            <p>&copy; {copyRightYear} Atka. All rights reserved.</p>
           </div>
     </section>
    )

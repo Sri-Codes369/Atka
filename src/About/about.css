@@ -1,0 +1,42 @@
+#about-us{
+    width: 100%;
+    height: 100vh;
+}
+
+.about-us-section{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about-us-image-section{
+    height: 100%;
+    width: 50%;
+    
+}
+
+.about-us-info-section{
+    
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.about-us-info-section>p{
+
+font-family: cursive;
+background-color: #d3d3d369;
+}
+
+
+
+.about-us-image-section>img{
+    height: 100%;
+    width: 100%;
+}

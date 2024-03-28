@@ -1,0 +1,19 @@
+.navbar{
+    background: rgb(238,174,202);
+    /* background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+
+    background:linear-gradient(190deg, rgb(159, 247, 226) 0%, rgba(255, 192, 203, 0.747), rgb(240, 201, 143) 100%);
+}
+
+.navbar-brand{
+    color: #021D30;
+    font-weight: 800;
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+
+.btn-auth{
+    background-color:transparent;
+    color: #021D30;
+    
+}

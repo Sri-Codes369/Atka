@@ -1,0 +1,29 @@
+.footer-section {
+    height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.68)), url('https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/09/travel-logo-design.jpg');
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    background-size: contain;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-media-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    color:orange;
+}
+
+.social-media-list li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 10px; /* Add spacing between list items */
+}
+
+.social-media-list li:last-child {
+    margin-right: 0; /* Remove margin from last list item */
+}

@@ -1,0 +1,36 @@
+#Home-Page{
+    width: 100%;
+    height: 90vh;
+}
+
+.background-image{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://png.pngtree.com/back_origin_pic/03/88/06/20451a964fa12319a324f2e99aac9632.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-welcome{
+    /* linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+    font-size: 72px;
+    background: -webkit-linear-gradient(270deg, rgb(54, 159, 135) 0%, rgba(255, 192, 203, 0.747), rgb(227, 165, 71) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-countries{
+    color: rgb(231, 126, 88);
+}
+
+.btn-book{
+    /* background-color: #7FFDFC; */
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%,white 100%);;
+    color: #021D30;
+
+}
+

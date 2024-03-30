@@ -5,11 +5,11 @@ import MainView from '../MainView/mainView';
 
 
 
-const Home = () => {
+const Home = ({ isLoggedIn }) => {
   const [countries, setCountries] = useState(['United State', 'India', 'France', 'Germany', 'Country5']);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  
+
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -20,7 +20,7 @@ const Home = () => {
   }, [countries]);
 
   return (
-     <><Navbar /><div>
+     <><div>
         
           <div id='Home-Page'>
           <div  class="background-image">
@@ -34,7 +34,7 @@ const Home = () => {
               </div>
           </div>
 
-          <MainView />
+          {isLoggedIn && <MainView />}
           </div>
        </div></>
   );

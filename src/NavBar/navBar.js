@@ -1,25 +1,55 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import bootstrapBundle from 'bootstrap/dist/js/bootstrap.bundle';
 
 
-const Navbar = () => {
+const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
 
 
-
+  
 
   const [LoginFormData, setLoginFormData] = useState({
     loginEmail: '',
     loginPassword: ''
   });
 
+
+  
   const handleLoginFormChange = (e) => {
     const { name, value } = e.target;
-    setLoginFormData({ ...formData, [name]: value });
+    setLoginFormData({ ...LoginFormData, [name]: value });
   };
 
   const handleLoginFormSubmit = (e) => {
     e.preventDefault();
     // Add login logic here (e.g., send data to backend)
-    console.log(formData);
+    const hardcodedCredentials = {
+      email: 'user@atka.com',
+      password: 'atka123'
+    };
+
+    // Check if input credentials match hardcoded ones
+    if (
+      LoginFormData.loginEmail == hardcodedCredentials.email &&
+      LoginFormData.loginPassword == hardcodedCredentials.password
+    ) {
+      console.log(LoginFormData)
+      setIsLoggedIn(true);
+      
+      const closeButton = document.querySelector('#loginFormModal .btn-close');
+      if (closeButton) {
+        closeButton.click();
+      }
+
+    //   const modal = document.getElementById('loginFormModal');
+    //   console.log(modal)
+    // const modalInstance = bootstrapBundle.Modal.getInstance(modal);
+    // modalInstance.hide();
+      
+    } else {
+      console.log(LoginFormData)
+      alert('Invalid credentials');
+    }
   };
 
 

@@ -33,9 +33,10 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
       LoginFormData.loginEmail == hardcodedCredentials.email &&
       LoginFormData.loginPassword == hardcodedCredentials.password
     ) {
-      console.log(LoginFormData)
-      setIsLoggedIn(true);
       
+      setIsLoggedIn(true);
+      LoginFormData.loginEmail = '';
+      LoginFormData.loginPassword = '';
       const closeButton = document.querySelector('#loginFormModal .btn-close');
       if (closeButton) {
         closeButton.click();
